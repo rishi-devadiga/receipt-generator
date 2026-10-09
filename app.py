@@ -234,7 +234,7 @@ def build_receipt_pdf(donor_name, contact_no, address, receipt_no, receipt_date,
     story.append(Spacer(1, 8))
 
     # ---- "RECEIPT" banner -------------------------------------------------
-    banner = Table([[Paragraph("DONATION RECEIPT", receipt_title_style)]],
+    banner = Table([[Paragraph("RECEIPT", receipt_title_style)]],
                     colWidths=[doc.width])
     banner.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#8B0000")),
